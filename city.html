@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О городе — Лениногорск</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/city.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html" class="active">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Развлечения</a>
+                <ul class="dropdown" aria-label="подменю">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!--  HERO -->
+        <section class="about-hero">
+            <div class="about-hero-content" data-aos="fade-up" data-aos-duration="1200">
+                <div class="glass-panel glass-panel--dark">
+                    <h1>Лениногорск</h1>
+                    <p>Город в сердце Татарстана</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- БЛОК  -->
+            <section class="about-section">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="kicker">Добро пожаловать</span>
+                    <h2>Город на семи холмах</h2>
+                    <p>Лениногорск – уютный город, расположенный в самом сердце Республики Татарстан. Этот город известен прежде всего как один из центров нефтяной промышленности региона, что наложило отпечаток на его характер и историю, но при этом он сохраняет свою неповторимую атмосферу и гостеприимство.</p>
+                    <p>Город раскинулся на живописных склонах Бугульминско-Белебеевской возвышенности. Климат здесь умеренно-континентальный, с теплым летом и умеренно холодной зимой, что делает его комфортным для посещения в разные сезоны.</p>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="img/download.jfif" alt="Панорама Лениногорска" loading="lazy">
+                    <div class="image-caption">Лениногорск. Белая ротонда</div>
+                </div>
+            </section>
+
+            <!-- БЛОК СТАТИСТИКИ  -->
+            <section class="stats-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="stat-card" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="stat-number">62,5 <span class="stat-small">тыс.</span></div>
+                    <div class="stat-label">Население</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <div class="stat-number">1948</div>
+                    <div class="stat-label">Год основания</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <div class="stat-number">24 <span class="stat-small">км²</span></div>
+                    <div class="stat-label">Площадь</div>
+                </div>
+            </section>
+
+            <!-- ВТОРОЙ БЛОК  -->
+            <section class="about-section reverse">
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="kicker">Исследуйте</span>
+                    <h2>Что посмотреть в Лениногорске</h2>
+                    <p>Несмотря на свою промышленную направленность, Лениногорск предлагает интересные места для знакомства. Обязательно стоит посетить Музей нефти, где можно узнать об истории освоения "черного золота" в регионе. Для прогулок и отдыха прекрасно подойдет городской парк культуры и отдыха "Нефтяник" или набережная Лениногорского водохранилища.</p>
+                    <a href="attractions.html" class="btn-glow about-btn">Все достопримечательности</a>
+                </div>
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/IMG_4298-1.jpg" alt="Музей нефти в Лениногорске" loading="lazy">
+                    <div class="image-caption">Музей нефти</div>
+                </div>
+            </section>
+
+            <!-- ЦИТАТА  -->
+            <section class="quote-block" data-aos="fade-up" data-aos-duration="1200">
+                <p>«Лениногорск – это город с интересной историей и самобытной культурой, где гармонично сочетаются индустриальное наследие и природные красоты. Приезжайте, чтобы открыть для себя этот уголок Татарстана и почувствовать его особую энергетику!»</p>
+            </section>
+
+            <!-- ГАЛЕРЕЯ  -->
+            <section class="gallery-section">
+                <h2 class="section-header" data-aos="fade-up" data-aos-duration="1000">Фотогалерея</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+                        <img src="img/view.jfif" alt="Набережная зимой" loading="lazy">
+                        <div class="gallery-overlay"><span>Набережная</span></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                        <img src="img/m.jfif" alt="Мечеть" loading="lazy">
+                        <div class="gallery-overlay"><span>Мечеть</span></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <img src="img/lake.jfif" alt="Набережная" loading="lazy">
+                        <div class="gallery-overlay"><span>Набережная</span></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+                        <img src="img/pr.jfif" alt="Природа" loading="lazy">
+                        <div class="gallery-overlay"><span>Природа</span></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                        <img src="img/z.jfif" alt="Загс" loading="lazy">
+                        <div class="gallery-overlay"><span>Дворец бракосочетаний</span></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <img src="img/r.jfif" alt="Ротонда" loading="lazy">
+                        <div class="gallery-overlay"><span>Белая ротонда</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  КАК ДОБРАТЬСЯ -->
+            <section class="map-section">
+                <h2 class="section-header" data-aos="fade-up" data-aos-duration="1000">Как добраться</h2>
+                <div class="map-container" data-aos="fade-up" data-aos-duration="1000">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=52.440000%2C54.600000&z=12&pt=52.440000%2C54.600000%2Cpm2rdm&l=map&mode=search&text=Лениногорск" 
+                            width="100%" 
+                            height="450" 
+                            frameborder="0"
+                            allowfullscreen="true"
+                            title="Карта Лениногорска">
+                    </iframe>
+                </div>
+                
+                <div class="transport-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="transport-card">
+                        <div class="transport-icon">🚌</div>
+                        <h3>Автобус</h3>
+                        <p>Регулярные рейсы из <strong>Казани</strong> (4.5 ч), <strong>Уфы</strong> (5 ч), <strong>Самары</strong> (4 ч)</p>
+                    </div>
+                    <div class="transport-card">
+                        <div class="transport-icon">🚂</div>
+                        <h3>Поезд</h3>
+                        <p>Ближайшая ж/д станция — <strong>Бугульма</strong> (23 км). Далее на такси или автобусе.</p>
+                    </div>
+                    <div class="transport-card">
+                        <div class="transport-icon">🚕</div>
+                        <h3>Такси</h3>
+                        <p>Из Бугульмы — 800-1000 ₽, из Альметьевска — 1500-2000 ₽</p>
+                    </div>
+                    <div class="transport-card">
+                        <div class="transport-icon">🚗</div>
+                        <h3>Личный авто</h3>
+                        <p>Трассы Р-239 (Казань - Оренбург) и М-7. От Казани — 320 км.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="" loading="lazy">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        window.addEventListener('scroll', function() {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 100);
+        });
+    </script>
+</body>
+</html>

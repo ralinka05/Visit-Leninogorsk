@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спорт в Лениногорске</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sport.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger active">Развлечения</a>
+                <ul class="dropdown">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html" class="active">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+    <section class="sport-hero">
+        <div class="hero-bottom-line"></div>
+        <div class="sport-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <div class="glass-panel glass-panel--dark">
+                <h1>Спорт в Лениногорске</h1>
+                <p>Активный отдых и спортивные достижения города нефтяников</p>
+            </div>
+        </div>
+    </section>
+    <main class="sport-main">
+        <div class="container">
+            <div class="category-nav" data-aos="fade-up" data-aos-duration="800">
+                <a href="#sports" class="category-nav-btn">🏟️ Спортивные объекты</a>
+                <a href="#events" class="category-nav-btn">🏆 Соревнования</a>
+                <a href="#teams" class="category-nav-btn">⚽ Команды</a>
+                <a href="#schools" class="category-nav-btn">👥 Спортивные школы</a>
+            </div>
+            <div class="sport-intro" data-aos="fade-up" data-aos-duration="1000">
+                <p>Лениногорск по праву гордится своей спортивной историей и инфраструктурой. Город воспитал множество чемпионов и продолжает развивать спорт высших достижений и массовый спорт. Здесь созданы все условия для активного образа жизни — от профессиональных тренировок до любительских занятий.</p>
+            </div>
+
+            <!-- Спортивные объекты -->
+            <section class="category-section" id="sports">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🏟️</span> Спортивные объекты
+                </h2>
+                
+                <div class="sports-grid">
+                    <!-- Ледовый дворец -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/ledovyy.jpg" alt="Ледовый дворец Нефтяник" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Ледовый дворец «Нефтяник»</h3>
+                            <p class="sport-description">Современный спортивный комплекс с искусственным льдом. Здесь проводятся тренировки по хоккею и фигурному катанию, а также массовые катания для жителей города.</p>
+                            <div class="sport-features">
+                                <span class="feature">❄️ Искусственный лед</span>
+                                <span class="feature">👥 500 мест</span>
+                                <span class="feature">🏒 Хоккейная школа</span>
+                            </div>
+                            <div class="sport-footer">
+                                <span class="sport-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    ул. Чайковского, 19/5
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Стадион Юность -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/stadion.jpg" alt="Стадион Юность" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Стадион «Юность»</h3>
+                            <p class="sport-description">Главная спортивная арена города с футбольным полем и беговыми дорожками. Здесь проходят городские соревнования и тренировки местных команд.</p>
+                            <div class="sport-features">
+                                <span class="feature">⚽ Футбольное поле</span>
+                                <span class="feature">🏃 Беговые дорожки</span>
+                            </div>
+                            <div class="sport-footer">
+                                <span class="sport-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    ул. Лыжная, 25
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Спорткомплекс Юность -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/sports-complex.jpg" alt="Спортивный комплекс Юность" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Спортивный комплекс «Юность»</h3>
+                            <p class="sport-description">Многофункциональный комплекс для занятий различными видами спорта. Здесь работают секции волейбола, баскетбола, единоборств и тренажерный зал.</p>
+                            <div class="sport-features">
+                                <span class="feature">🏐 Игровой зал</span>
+                                <span class="feature">🥊 Зал единоборств</span>
+                                <span class="feature">🏋️ Тренажерный зал</span>
+                            </div>
+                            <div class="sport-footer">
+                                <span class="sport-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    ул. Молодежная, 8
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Лыжные трамплины -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/ski-jumps.jpg" alt="Лыжные трамплины" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Лыжные трамплины</h3>
+                            <p class="sport-description">Уникальный спортивный объект для прыжков на лыжах с трамплина. Один из немногих в регионе комплекс.</p>
+                            <div class="sport-features">
+                                <span class="feature">⛷️ Трамплины К-40, К-60</span>
+                                <span class="feature">🌲 Живописный склон</span>
+                            </div>
+                            <div class="sport-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Бассейн "Дельфин" -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/pool.jpg" alt="Бассейн Дельфин" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Бассейн «Дельфин»</h3>
+                            <p class="sport-description">Современный плавательный бассейн с несколькими дорожками. Работают группы для детей и взрослых.</p>
+                            <div class="sport-features">
+                                <span class="feature">🏊 25-метровый бассейн</span>
+                                <span class="feature">👶 Детские группы</span>
+                            </div>
+                            <div class="sport-footer">
+                                <span class="sport-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    ул. Горького, 5
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Теннисные корты -->
+                    <div class="sport-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="sport-img-wrapper">
+                            <img src="img/sport/tennis.jpg" alt="Теннисные корты" class="sport-img" loading="lazy">
+                        </div>
+                        <div class="sport-content">
+                            <h3>Теннис Холл</h3>
+        <p class="sport-description">Крытый теннисный корт с грунтовым покрытием, работающий круглый год. Здесь проводятся тренировки, любительские матчи и соревнования по теннису. Есть раздевалки, душевые, прокат инвентаря и услуги тренера.</p>
+        <div class="sport-features">
+            <span class="feature">🎾 Грунтовое покрытие</span>
+            <span class="feature">🏠 Крытый корт</span>
+            <span class="feature">🏓 Прокат инвентаря</span>
+            <span class="feature">👨‍🏫 Услуги тренера</span>
+        </div>
+        <div class="sport-footer">
+            <span class="sport-location">
+                <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                </svg>
+                ул. Чайковского, 20
+            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Соревнования -->
+            <section class="category-section" id="events">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🏆</span> Ежегодные соревнования
+                </h2>
+                
+                <div class="events-grid">
+                    <div class="event-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="event-date">
+                            <span class="event-month">Февраль</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>«Лыжня России»</h4>
+                            <p>Всероссийские массовые соревнования по лыжным гонкам на лыжных трамплинах.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="event-date">
+                            <span class="event-month">Март</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Хоккейный турнир «Кубок Нефтяника»</h4>
+                            <p>Ежегодный турнир среди юношеских команд в Ледовом дворце.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="event-date">
+                            <span class="event-month">Май</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Легкоатлетическая эстафета</h4>
+                            <p>Традиционная эстафета на приз газеты «Лениногорские вести».</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="event-date">
+                            <span class="event-month">Сентябрь</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>«Кросс наций»</h4>
+                            <p>Всероссийский день бега, объединяющий любителей и профессионалов.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Команды -->
+            <section class="category-section" id="teams">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">⚽</span> Спортивные команды
+                </h2>
+                
+                <div class="teams-grid">
+                    <div class="team-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="team-icon">🏒</div>
+                        <div class="team-content">
+                            <h4>ХК «Нефтяник»</h4>
+                            <p>Хоккейная команда, участница первенства Республики Татарстан. Воспитанники команды выступают в различных лигах страны.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="team-icon">⚽</div>
+                        <div class="team-content">
+                            <h4>ФК «Лениногорск»</h4>
+                            <p>Футбольная команда, представляющая город в республиканских соревнованиях. Домашние матчи проводит на стадионе «Нефтяник».</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="team-icon">⛷️</div>
+                        <div class="team-content">
+                            <h4>Сборная по прыжкам на лыжах</h4>
+                            <p>Команда прыгунов с трамплина, регулярно завоевывающая медали на всероссийских соревнованиях.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Спортивные школы -->
+            <section class="category-section" id="schools">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">👥</span> Спортивные школы
+                </h2>
+                
+                <div class="schools-grid">
+                    <!-- ДЮСШ №1 -->
+                    <div class="school-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="school-icon">🏛️</div>
+                        <h4>ДЮСШ №1</h4>
+                        <p class="school-specialization">Специализация: легкая атлетика, лыжные гонки, хоккей.</p>
+                        <div class="school-address">
+                            <svg class="address-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                            </svg>
+                            <span>ул. Спортивная, 3</span>
+                        </div>
+                        <div class="school-phone">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number" data-phone="8 (85595) 5-12-34">8 (85595) 5-12-34</span>
+                            <button class="copy-phone" onclick="copyPhoneNumber('8 (85595) 5-12-34', this)" title="Копировать номер">📋</button>
+                        </div>
+                    </div>
+
+                    <!-- ДЮСШ №2 -->
+                    <div class="school-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="school-icon">🏛️</div>
+                        <h4>ДЮСШ №2</h4>
+                        <p class="school-specialization">Специализация: волейбол, баскетбол, единоборства, плавание.</p>
+                        <div class="school-address">
+                            <svg class="address-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                            </svg>
+                            <span>ул. Молодежная, 8</span>
+                        </div>
+                        <div class="school-phone">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number" data-phone="8 (85595) 5-56-78">8 (85595) 5-56-78</span>
+                            <button class="copy-phone" onclick="copyPhoneNumber('8 (85595) 5-56-78', this)" title="Копировать номер">📋</button>
+                        </div>
+                    </div>
+
+                    <!-- Специализированная школа по прыжкам на лыжах -->
+                    <div class="school-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="school-icon">⛷️</div>
+                        <h4>Специализированная школа по прыжкам на лыжах</h4>
+                        <p class="school-specialization">Единственная в регионе школа, готовящая спортсменов по прыжкам с трамплина и лыжному двоеборью.</p>
+                        <div class="school-address">
+                            <svg class="address-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                            </svg>
+                            <span>п. Лыжная база, 1</span>
+                        </div>
+                        <div class="school-phone">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number" data-phone="8 (85595) 5-90-12">8 (85595) 5-90-12</span>
+                            <button class="copy-phone" onclick="copyPhoneNumber('8 (85595) 5-90-12', this)" title="Копировать номер">📋</button>
+                        </div>
+                    </div>
+
+                    <!-- ДЮСШ №3 -->
+                    <div class="school-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="school-icon">🥋</div>
+                        <h4>ДЮСШ №3</h4>
+                        <p class="school-specialization">Специализация: единоборства (самбо, дзюдо, вольная борьба), тяжелая атлетика.</p>
+                        <div class="school-address">
+                            <svg class="address-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                            </svg>
+                            <span>ул. Гагарина, 45</span>
+                        </div>
+                        <div class="school-phone">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number" data-phone="8 (85595) 5-78-90">8 (85595) 5-78-90</span>
+                            <button class="copy-phone" onclick="copyPhoneNumber('8 (85595) 5-78-90', this)" title="Копировать номер">📋</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sport-quote" data-aos="fade-up" data-aos-duration="1000">
+                <p>«Спорт — это не только рекорды и медали. Это здоровье нации, характер и сила духа. Лениногорск всегда славился своими спортивными традициями, и мы гордимся нашими атлетами»</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Toast уведомление для копирования -->
+    <div id="copy-toast" class="copy-toast"></div>
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Текущий год в футере
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Эффект для шапки при скролле
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Функция копирования номера телефона
+        function copyPhoneNumber(phoneNumber, button) {
+            // Копируем в буфер обмена
+            navigator.clipboard.writeText(phoneNumber).then(function() {
+                // Добавляем класс copied
+                button.classList.add('copied');
+                
+                // Меняем текст кнопки на галочку
+                const originalText = button.textContent;
+                button.textContent = '✓';
+                
+                // Показываем toast
+                showToast('Номер скопирован: ' + phoneNumber);
+                
+                // Убираем эффект через 2 секунды
+                setTimeout(function() {
+                    button.classList.remove('copied');
+                    button.textContent = originalText;
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Ошибка копирования: ', err);
+                showToast('Не удалось скопировать номер', false);
+            });
+        }
+
+        // Функция показа toast-уведомления
+        function showToast(message, isSuccess = true) {
+            const toast = document.getElementById('copy-toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            toast.style.background = isSuccess ? 'var(--accent-green)' : '#dc3545';
+            
+            setTimeout(function() {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

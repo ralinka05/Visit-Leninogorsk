@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности Лениногорска</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/attractions.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger active">Развлечения</a>
+                <ul class="dropdown">
+                    <li><a href="attractions.html" class="active">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero  -->
+    <section class="attractions-hero">
+        <div class="hero-bottom-line"></div>
+        <div class="attractions-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <div class="glass-panel glass-panel--dark">
+                <h1>Достопримечательности Лениногорска</h1>
+                <p>Откройте для себя историю и красоту города</p>
+            </div>
+        </div>
+    </section>
+    <main class="attractions-main">
+        <div class="container">
+            <div class="category-nav" data-aos="fade-up" data-aos-duration="800">
+                <a href="#monuments" class="category-nav-btn">🏛️ Памятники</a>
+                <a href="#museums" class="category-nav-btn">🏺 Музеи</a>
+                <a href="#architecture" class="category-nav-btn">🏰 Архитектура</a>
+            </div>
+
+            <!-- Памятники -->
+            <section class="category-section" id="monuments">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🏛️</span> Памятники и мемориалы
+                </h2>
+                
+                <div class="attractions-grid">
+
+                    <!-- Монумент нефтяникам -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/90855487da1032da472043ef7e3d1f3a.jpg" alt="Монумент первооткрывателям татарской нефти" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Монумент «Первооткрывателям нефти Татарии»</h3>
+                            <p class="attraction-description">Главный символ Лениногорска, его визитная карточка. Расположен на площади Нефтяников. Именно с этого места нужно начинать знакомство с городом.</p>
+                            <a href="attractions/monument-neft.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Памятник Ленину -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/lenin.jpg" alt="Памятник Ленину" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Памятник В.И. Ленину</h3>
+                            <p class="attraction-description">Главный монумент на главной площади города. Расположен в самом сердце Лениногорска — на площади Ленина, где сосредоточены административные здания.</p>
+                            <a href="attractions/lenin.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Монумент Славы -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/monument-glory.jpg" alt="Монумент Вечной Славы" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Монумент Вечной Славы</h3>
+                            <p class="attraction-description">Священное место для каждого лениногорца. Вечный огонь горит в память о тысячах земляков, не вернувшихся с полей Великой Отечественной войны.</p>
+                            <a href="monument-glory.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Музеи -->
+            <section class="category-section" id="museums">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🏺</span> Музеи и выставки
+                </h2>
+                
+                <div class="attractions-grid">
+                    <!-- Музей нефти (Шугурово) -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/museimsh.jpg" alt="Музей нефти в Шугурово" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Музей нефти в с. Шугурово</h3>
+                            <p class="attraction-description">Легендарный комплекс в поселке Шугурово (30-40 минут от города). Именно здесь в 1943 году забил первый фонтан девонской нефти.</p>
+                            <a href="museum-shugurovo.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Музей нефти в городе -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/museimn.jpg" alt="Музей нефти" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Музей нефти</h3>
+                            <p class="attraction-description">Ведомственный музей в административном здании нефтяников. Посещение по предварительной договоренности или в составе экскурсионной группы.</p>
+                            <a href="museum-oil-leninogorsk.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+                      <!-- Краеведческий музей -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/krayeved.png" alt="Краеведческий музей" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Краеведческий музей</h3>
+                            <p class="attraction-description">Главный городской музей на проспекте Ленина. Именно сюда стоит зайти, чтобы сложить полную картину об истории края. Отдельный зал посвящен нефтяной теме.</p>
+                            <a href="museum-local-lore.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Архитектура -->
+            <section class="category-section" id="architecture">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🏰</span> Архитектурные сооружения
+                </h2>
+                
+                <div class="attractions-grid">
+                    <!-- Дворец Культуры -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/kultura.jpg" alt="Дворец Культуры" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Дворец Культуры</h3>
+                            <p class="attraction-description">Главное культурное учреждение города, где проходят концерты, фестивали и городские мероприятия. Архитектурная доминанта центральной части.</p>
+                            <a href="dk.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Мечеть Ихлас -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/ikhlas.jpg" alt="Мечеть Ихлас" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Мечеть Ихлас</h3>
+                            <p class="attraction-description">Красивая городская мечеть, духовный центр мусульман Лениногорска. Изящная архитектура с минаретами украшает городской пейзаж.</p>
+                            <a href="ikhlas.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Дворец бракосочетаний -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/zags.jpg" alt="Дворец бракосочетаний" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Дворец бракосочетаний</h3>
+                            <p class="attraction-description">Одно из самых красивых и нарядных зданий Лениногорска. Расположено в центре, в уютной зеленой зоне. Популярное место для свадебных фотосессий.</p>
+                            <a href="zags.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Монумент Время -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/monument-vremya.jpg" alt="Монумент Время" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Монумент «Время»</h3>
+                            <p class="attraction-description">Современная городская скульптура, символизирующая связь времен и преемственность поколений. Интересное место для фотографий.</p>
+                            <a href="monument-time.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Троицкий храм -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/troick.jpg" alt="Троицкий храм" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Троицкий храм</h3>
+                            <p class="attraction-description">Значимый православный храм Лениногорска с уникальной атмосферой и историей. Дополняет архитектурный облик духовного центра региона.</p>
+                            <a href="troitsky.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Стела на въезде -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/stela.jpg" alt="Стела на въезде" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Въездная стела</h3>
+                            <p class="attraction-description">Въездной знак, приветствующий гостей Лениногорска. Современный дизайн и подсветка делают его заметным в любое время суток.</p>
+                            <a href="stela.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Белая ротонда -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/rotonda.jpg" alt="Белая ротонда" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Белая ротонда</h3>
+                            <p class="attraction-description">Изящное архитектурное сооружение, которое местные жители облюбовали для романтических прогулок и фотосессий. Открывается красивый вид на окрестности.</p>
+                            <a href="rotonda-white.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Черная ротонда -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/blackrotonda.jpg" alt="Черная ротонда" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Черная ротонда</h3>
+                            <p class="attraction-description">Открыта в парке им. Горького к празднованию 50-летия Лениногорска. Интересный архитектурный объект в темных тонах, контрастирующий с белой ротондой.</p>
+                            <a href="rotonda-black.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Фонтан Балерины -->
+                    <div class="attraction-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="attraction-img-wrapper">
+                            <img src="img/attractions/fontan-baleriny.jpg" alt="Фонтан Балерины" class="attraction-img" loading="lazy">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>Фонтан «Балерины»</h3>
+                            <p class="attraction-description">Один из самых красивых и узнаваемых фонтанов Лениногорска. Скульптуры танцовщиц придают ему особое изящество. Вечером включается подсветка.</p>
+                            <a href="fountain-ballerinas.html" class="attraction-link">Подробнее →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Приглашение посетить -->
+            <div class="invite-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="invite-content">
+                    <h3>Готовы к прогулке?</h3>
+                    <p>Все достопримечательности Лениногорска ждут вас! Посмотрите готовые маршруты и отправляйтесь навстречу новым впечатлениям.</p>
+                    <a href="routes.html" class="btn-glow">Посмотреть маршруты</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

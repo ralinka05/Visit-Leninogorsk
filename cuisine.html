@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кухня Лениногорска | Гастрономическое путешествие</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cuisine.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger">Развлечения</a>
+                <ul class="dropdown">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+    <!-- Hero секция-->
+    <section class="cuisine-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bottom-line"></div>
+        <div class="cuisine-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <span class="hero-pre-title">Гастрономическое путешествие</span>
+            <h1 class="hero-title">Кухня Лениногорска</h1>
+            <p class="hero-subtitle">Традиции татарской и русской кухни в сердце Татарстана</p>
+            <div class="hero-scroll-indicator">
+                <span class="scroll-text">Откройте вкусы</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </div>
+    </section>
+    <!-- Основной контент -->
+    <main class="cuisine-main">
+        <div class="cuisine-container">
+            <!--Цитата -->
+            <div class="intro-block" data-aos="fade-up">
+                <div class="intro-quote">
+                    <svg class="quote-icon" width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 11H6V7H10V11ZM18 11H14V7H18V11Z" fill="#c7a97b"/>
+                        <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V6H20V18Z" fill="#c7a97b" fill-opacity="0.5"/>
+                    </svg>
+                    <p class="intro-text">Кухня Лениногорска – это аппетитное сочетание традиций и современности. Местные жители бережно хранят и передают из поколения в поколение рецепты татарской и русской кухни, одновременно впитывая кулинарные веяния разных народов, населяющих Татарстан. Гастрономическое путешествие по Лениногорску оставит в вашей памяти и сердце (и, конечно, желудке!) только самые теплые и вкусные воспоминания.</p>
+                </div>
+            </div>
+
+            <section class="cuisine-section" data-aos="fade-up">
+                <div class="cuisine-content-block">
+                    <div class="cuisine-text">
+                        <h2 class="section-title">
+                            <span class="title-icon">🥟</span>
+                            Обязательно попробуйте
+                        </h2>
+                        <p>Знаменитая татарская выпечка – это король стола. Безусловно, <strong>эчпочмак</strong> – ароматный треугольный пирожок с сочной начинкой из мяса (чаще всего говядины или баранины) и картофеля. Не менее популярен <strong>кыстыбый</strong> – пресная лепешка с начинкой из картофельного пюре или пшенной каши.</p>
+                        <p>Из сытных мясных блюд стоит отметить <strong>азу по-татарски</strong> – тушеное мясо с солеными огурцами и картофелем, а также различные вариации плова. Любителям супов придется по вкусу наваристая <strong>шулпа</strong> (мясной бульон с крупно нарезанными овощами) или <strong>токмач</strong> (суп-лапша).</p>
+                        
+                        <div class="dish-tags">
+                            <span class="dish-tag">🥟 Эчпочмак</span>
+                            <span class="dish-tag">🥘 Азу по-татарски</span>
+                            <span class="dish-tag">🫓 Кыстыбый</span>
+                            <span class="dish-tag">🍜 Токмач</span>
+                        </div>
+                    </div>
+                    <div class="cuisine-img-wrapper">
+                        <img src="img/eat.jpg" alt="Татарские основные блюда" class="cuisine-img" loading="lazy">
+                        <div class="image-caption">Традиционные татарские блюда</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cuisine-section" data-aos="fade-up">
+                <div class="cuisine-content-block reverse">
+                    <div class="cuisine-text">
+                        <h2 class="section-title">
+                            <span class="title-icon">🍯</span>
+                            Сладкие традиции
+                        </h2>
+                        <p>Ни одно татарское застолье не обходится без сладостей. Визитной карточкой сладкой кухни является <strong>чак-чак</strong> – десерт из кусочков обжаренного в масле теста, щедро политых медом. Это не просто лакомство, а символ гостеприимства и обязательный атрибут праздничного стола.</p>
+                        <p>Также популярны <strong>губадия</strong> – круглый пирог со сложной многослойной начинкой, и различные виды медовой <strong>пахлавы</strong>. Каждое сладкое блюдо имеет свою историю и особое место в культуре.</p>
+                        
+                        <div class="dish-tags">
+                            <span class="dish-tag">🍯 Чак-чак</span>
+                            <span class="dish-tag">🥧 Губадия</span>
+                            <span class="dish-tag">🍯 Пахлава</span>
+                            <span class="dish-tag">🍬 Медовые угощения</span>
+                        </div>
+                    </div>
+                    <div class="cuisine-img-wrapper">
+                        <img src="img/gubadia.jpg" alt="Татарские сладости" class="cuisine-img" loading="lazy">
+                        <div class="image-caption">Традиционные татарские сладости</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cuisine-section" data-aos="fade-up">
+                <div class="cuisine-content-block">
+                    <div class="cuisine-text">
+                        <h2 class="section-title">
+                            <span class="title-icon">☕</span>
+                            Напитки
+                        </h2>
+                        <p>Особое место в местной кухне занимают напитки. Традиционный <strong>татарский чай</strong> – это не просто способ утолить жажду, а целый ритуал. Его часто подают с молоком или сливками, а к чаю обязательно предлагают варенье, мед и, конечно же, свежую выпечку.</p>
+                        <p>Из прохладительных напитков популярен <strong>айран</strong> – кисломолочный напиток на основе катыка, отлично утоляющий жажду в жаркий день. Также в Лениногорске можно попробовать различные <strong>морсы</strong> из местных ягод и традиционный <strong>квас</strong>.</p>
+                        
+                        <div class="dish-tags">
+                            <span class="dish-tag">☕ Татарский чай</span>
+                            <span class="dish-tag">🥛 Айран</span>
+                            <span class="dish-tag">🍓 Морсы</span>
+                            <span class="dish-tag">🍺 Квас</span>
+                        </div>
+                    </div>
+                    <div class="cuisine-img-wrapper">
+                        <img src="img/tea.jpg" alt="Татарские напитки" class="cuisine-img" loading="lazy">
+                        <div class="image-caption">Традиционные напитки</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Гастрономические советы -->
+            <section class="tips-section" data-aos="fade-up">
+                <h2 class="section-title centered">
+                    <span class="title-icon">📝</span>
+                    Гастрономические советы
+                </h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🥟</div>
+                        <h4 class="tip-title">Пробуйте свежую выпечку</h4>
+                        <p class="tip-text">Эчпочмаки и кыстыбый лучше всего есть горячими, только что из печи. В местных пекарнях их выпекают несколько раз в день.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🍯</div>
+                        <h4 class="tip-title">Чак-чак в подарок</h4>
+                        <p class="tip-text">Это идеальный гастрономический сувенир из Лениногорска. Его можно найти в любом продуктовом магазине и в специализированных лавках.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">☕</div>
+                        <h4 class="tip-title">Чайная церемония</h4>
+                        <p class="tip-text">Не спешите – насладитесь татарским чаепитием. К чаю обязательно подадут мед, варенье и свежую выпечку.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">📅</div>
+                        <h4 class="tip-title">Спросите "блюдо дня"</h4>
+                        <p class="tip-text">В многих кафе есть "блюдо дня", приготовленное по домашнему рецепту шеф-повара – это отличный способ попробовать что-то особенное.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Приглашение к действию -->
+            <div class="invite-section" data-aos="fade-up">
+                <div class="invite-content">
+                    <h3 class="invite-title">Поделитесь своими открытиями</h3>
+                    <p class="invite-text">Знаете вкусное место? Хотите поделиться рецептом? Напишите нам!</p>
+                    <a href="mailto:portal@visit-leninogorsk.com" class="invite-button">
+                        <span>Написать нам</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html" class="active">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- AOS и скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-out-cubic'
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        document.querySelector('.scroll-arrow')?.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

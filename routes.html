@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршруты по Лениногорску | Пешие и автомобильные экскурсии</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/dist/phosphor.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/routes.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger">Развлечения</a>
+                <ul class="dropdown">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html" class="active">Маршруты</a></li>
+        </ul>
+    </header>
+    <section class="routes-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bottom-line"></div>
+        <div class="routes-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <span class="hero-pre-title">Путешествуйте по городу</span>
+            <h1 class="hero-title">Маршруты по Лениногорску</h1>
+            <p class="hero-subtitle">Пешие и автомобильные экскурсии по главным достопримечательностям</p>
+        </div>
+    </section>
+    <main class="routes-main">
+        <div class="container">
+            <div class="routes-intro" data-aos="fade-up" data-aos-duration="1000">
+                <p>Лениногорск — город, который интересно исследовать. Мы подготовили для вас разнообразные маршруты: от коротких прогулок по центру до продолжительных поездок по окрестностям. Для каждого маршрута есть своя карта с отмеченными точками. Выбирайте, что вам по душе, и отправляйтесь в путь!</p>
+            </div>
+
+            <!-- Фильтр маршрутов -->
+            <div class="routes-filter" data-aos="fade-up" data-aos-duration="800">
+                <button class="filter-btn active" data-filter="all">Все маршруты</button>
+                <button class="filter-btn" data-filter="walking">🚶 Пешие</button>
+                <button class="filter-btn" data-filter="driving">🚗 Автомобильные</button>
+                <button class="filter-btn" data-filter="historical">🏛️ Исторические</button>
+                <button class="filter-btn" data-filter="cultural">🎭 Культурные</button>
+                <button class="filter-btn" data-filter="religious">🕌 Религиозные</button>
+            </div>
+
+            <!-- Маршрут 1 -->
+            <section class="route-section" id="route1" data-category="walking historical" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🏛️</span>
+                    Маршрут №1: Центр города
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🏛️ Исторический</span>
+                            <span class="route-badge">⏱️ 2-3 часа</span>
+                            <span class="route-badge">📏 3 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Прогулка по центральной части города с посещением главных исторических и архитектурных достопримечательностей. Маршрут начинается от Монумента первооткрывателям нефти и проходит через площадь Ленина, Дворец культуры и Аллею Героев.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Памятник В.И. Ленину</h4>
+                                <p>Главный монумент на главной площади города. Скульптура «Призывающий вождь» работы Г.Д. Алексеева (1960 г.).</p>
+                                <div class="point-coords">пл. Ленина</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Дворец культуры</h4>
+                                <p>Главная сцена города, открытая в 1964 году. Более 60 творческих коллективов, театральная студия «Поколение+».</p>
+                                <div class="point-coords">ул. Ленинградская, 28а</div>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Фонтан «Балерины»</h4>
+                                <p>Фонтан 1960-х годов с пятью скульптурами балерин. По легенде, фигуры изготовлены в мастерской Евгения Вучетича.</p>
+                                <div class="point-coords">пр. Ленина, 29</div>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <div class="point-number">4</div>
+                            <div class="point-content">
+                                <h4>Монумент первооткрывателям нефти</h4>
+                                <p>Главный символ города, с которого начинается знакомство с Лениногорском. 33-метровый монумент, стилизованный под нефтяной фонтан.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.599422,52.448453&z=16&l=map&mode=routes&rtext=54.594049,52.447382~54.599218,52.447344~54.599572,52.446688~54.600481,52.444985~54.604795,52.451922&rtt=pd
+" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта маршрута Центр города">
+                        </iframe>
+                        <p class="route-map-note">На карте отмечены основные точки маршрута в порядке следования</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 2 -->
+            <section class="route-section" id="route2" data-category="walking cultural" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🏰</span>
+                    Маршрут №2: Архитектурный Лениногорск
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🏰 Архитектурный</span>
+                            <span class="route-badge">⏱️ 2-3 часа</span>
+                            <span class="route-badge">📏 2.5 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Знакомство с лучшими архитектурными сооружениями города: от советского модернизма до современных форм. Маршрут включает Дворец культуры, мечеть, храм и Дворец бракосочетаний.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Дворец культуры</h4>
+                                <p>Здание 1964 года по проекту ленинградских архитекторов. Образец советской архитектуры с колоннами и фронтоном.</p>
+                                <div class="point-coords">ул. Ленинградская, 28а</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Мечеть Ихлас</h4>
+                                <p>Соборная мечеть, построенная в 1992-2006 годах. Два молельных зала на 1500 человек, музей татарской культуры.</p>
+                                <div class="point-coords">ул. Набережная, 26А</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Свято-Троицкий храм</h4>
+                                <p>Православный храм с богатой историей. Главная святыня — икона Божией Матери «Скоропослушница», мощевик с частицами святых.</p>
+                                <div class="point-coords">ул. Губкина, 2А</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">4</div>
+                            <div class="point-content">
+                                <h4>Дворец бракосочетаний</h4>
+                                <p>Построен в 2015 году к 70-летию города. Считается одним из самых красивых ЗАГСов Татарстана. Два этажа с залом торжеств и комнатами жениха и невесты.</p>
+                                <div class="point-coords">ул. Булгакова, 1А</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.599768,52.458914&z=15&l=map&mode=routes&rtext=54.594049,52.447382~54.599572,52.446688~54.605588,52.453267~54.608003,52.461888~54.602197,52.479749&rtt=mt
+" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта архитектурного маршрута">
+                        </iframe>
+                        <p class="route-map-note">Маршрут проходит через главные архитектурные сооружения города</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 3 -->
+            <section class="route-section" id="route3" data-category="walking" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🌳</span>
+                    Маршрут №3: Парки и ротонды
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🌳 Прогулочный</span>
+                            <span class="route-badge">⏱️ 2-3 часа</span>
+                            <span class="route-badge">📏 3 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Прогулка по живописным паркам и смотровым площадкам города. Маршрут включает две ротонды — Белую и Чёрную, парк Горького и фонтан с балеринами.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Белая ротонда</h4>
+                                <p>Построена в 1960 году по образцу Павловского парка в Санкт-Петербурге. 211 ступеней к смотровой площадке с панорамным видом на город.</p>
+                                <div class="point-coords">Парк им. Горького</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Чёрная ротонда</h4>
+                                <p>Построена в 2005 году к 50-летию города. Вторая ротонда на холме с видом на город.</p>
+                                <div class="point-coords">холмистая часть города</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Парк им. Горького</h4>
+                                <p>Центральный парк города с аттракционами, летними кафе и тенистыми аллеями.</p>
+                                <div class="point-coords">центр города</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">4</div>
+                            <div class="point-content">
+                                <h4>Фонтан «Балерины»</h4>
+                                <p>Фонтан 1960-х годов с пятью скульптурами балерин. По легенде, фигуры изготовлены в мастерской Евгения Вучетича.</p>
+                                <div class="point-coords">пр. Ленина, 29</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=52.453923%2C54.604896&z=15&l=map&mode=routes&rtext=54.608165,52.464535~54.612322,52.466004~54.600488,52.444964&rtt=mt" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта маршрута Парки и ротонды">
+                        </iframe>
+                        <p class="route-map-note">Прогулка по живописным местам и смотровым площадкам</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 4 -->
+            <section class="route-section" id="route4" data-category="walking cultural" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🏺</span>
+                    Маршрут №4: Музейный
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🏺 Культурный</span>
+                            <span class="route-badge">⏱️ 3-4 часа</span>
+                            <span class="route-badge">📏 2 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Погружение в историю и культуру Лениногорска через его музеи. Маршрут включает три уникальных музея: краеведческий, нефтяной и музей в мечети.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Краеведческий музей</h4>
+                                <p>Основан ветеранами в 1985 году. Четыре зала: этнография «Туган авылым», Зал Памяти, природа края, выставочный зал. 11 000+ экспонатов.</p>
+                                <div class="point-coords">пр. Шашина, 18</div>
+                                <div class="point-contact">+7 (85595) 5-05-91</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Музей нефти</h4>
+                                <p>Первый в СССР Музей нефти, открыт в 1968 году. Три этажа истории: документы с 1637 года, макеты буровых, пробирки с нефтью.</p>
+                                <div class="point-coords">пр. Ленина, 3</div>
+                                <div class="point-contact">+7 (85595) 4-12-60</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Музей татарской культуры (в мечети Ихлас)</h4>
+                                <p>Уникальный музей с редкими книгами татарских религиозных деятелей, изданными в дореволюционную эпоху.</p>
+                                <div class="point-coords">ул. Набережная, 26А</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.601026,52.451330&z=15&l=map&mode=routes&rtext=54.594049,52.447382~54.601949,52.440762~54.604896,52.453914~54.608002,52.461899&rtt=mt" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта музейного маршрута">
+                        </iframe>
+                        <p class="route-map-note">Путешествие по музеям города</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 5 -->
+            <section class="route-section" id="route5" data-category="driving historical" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">⛽</span>
+                    Маршрут №5: Нефтяное наследие
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚗 Автомобильный</span>
+                            <span class="route-badge">⛽ Исторический</span>
+                            <span class="route-badge">⏱️ 4-5 часов</span>
+                            <span class="route-badge">📏 45 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Автомобильное путешествие к истокам нефтяной истории Татарстана. Маршрут включает главные символы нефтяной эпохи: от монумента в центре до музея-завода в Шугурово.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Монумент первооткрывателям нефти</h4>
+                                <p>33-метровый монумент, посвящённый открытию Ромашкинского месторождения.</p>
+                                <div class="point-coords">пл. Нефтяников</div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Музей нефти в Шугурово</h4>
+                                <p>Уникальный музей под открытым небом на месте бывшего Шугуровского нефтебитумного завода (основан в 1877 году!).</p>
+                                <div class="point-coords">с. Шугурово, ул. Заводская, 5</div>
+                                <div class="point-contact">+7 (85595) 9-77-13</div>
+                            </div>
+                        </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.551999,52.287264&z=12&l=map&mode=routes&rtext=54.594049,52.447382~54.604796,52.451923~54.517797,52.123259&rtt=auto" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта нефтяного маршрута">
+                        </iframe>
+                        <p class="route-map-note">Автомобильный маршрут до музея в Шугурово (30-40 минут езды)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 6 -->
+            <section class="route-section" id="route6" data-category="walking religious" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🕌</span>
+                    Маршрут №6: Религиозный
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🕌 Религиозный</span>
+                            <span class="route-badge">⏱️ 2 часа</span>
+                            <span class="route-badge">📏 2 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Знакомство с духовными центрами Лениногорска: мечетью и православным храмом. Маршрут позволяет увидеть, как в городе мирно соседствуют разные религии.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Мечеть Ихлас</h4>
+                                <p>Соборная мечеть на высоком берегу. Музей татарской культуры, редкие книги, комнаты для никаха и имянаречения. Вместимость до 1500 человек.</p>
+                                <div class="point-coords">ул. Набережная, 26А</div>
+                                <div class="point-contact">+7 (85595) 5-10-10</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Свято-Троицкий храм</h4>
+                                <p>Православный храм с богатой историей. Икона Божией Матери «Скоропослушница», мощевик с частицами святых, воскресная школа, библиотека.</p>
+                                <div class="point-coords">ул. Губкина, 2А</div>
+                                <div class="point-contact">+7 (85595) 6-41-21</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title"> Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.601123,52.463895&z=15&l=map&mode=routes&rtext=54.594049,52.447382~54.608002,52.461899~54.602200,52.479754&rtt=mt" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта религиозного маршрута">
+                        </iframe>
+                        <p class="route-map-note">Маршрут соединяет два главных духовных центра города</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 7 -->
+            <section class="route-section" id="route7" data-category="walking" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">❤️</span>
+                    Маршрут №7: Романтический
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">❤️ Романтический</span>
+                            <span class="route-badge">⏱️ 2 часа</span>
+                            <span class="route-badge">📏 2.5 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Идеальный маршрут для свидания или романтической прогулки. Белая ротонда, фонтан с балеринами и Дворец бракосочетаний создают особенную атмосферу.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Фонтан «Балерины»</h4>
+                                <p>Пять изящных фигур в вечном танце. Традиционное место для свадебных фото и встреч влюблённых.</p>
+                                <div class="point-coords">пр. Ленина, 29</div>
+                            </div>
+                        </div>
+
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Дворец бракосочетаний</h4>
+                                <p>Самый красивый ЗАГС Татарстана. Место, где начинаются семьи.</p>
+                                <div class="point-coords">ул. Булгакова, 1А</div>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Белая ротонда</h4>
+                                <p>Главное романтическое место города. 211 ступеней к смотровой площадке. Здесь назначают свидания и загадывают желания.</p>
+                                <div class="point-coords">Парк им. Горького</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title">Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.601626,52.448620&z=15&l=map&mode=routes&rtext=54.594049,52.447382~54.600481,52.444985~54.605587,52.453263~54.609178,52.452441&rtt=mt" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта романтического маршрута">
+                        </iframe>
+                        <p class="route-map-note">Идеальный маршрут для свидания</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Маршрут 8 -->
+            <section class="route-section" id="route8" data-category="walking historical" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="route-main-title">
+                    <span class="title-icon">🗿</span>
+                    Маршрут №8: Монументальный
+                </h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-meta">
+                            <span class="route-badge">🚶 Пеший</span>
+                            <span class="route-badge">🗿 Исторический</span>
+                            <span class="route-badge">⏱️ 2 часа</span>
+                            <span class="route-badge">📏 3 км</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-description">
+                        <p>Прогулка по главным монументам города, отражающим разные эпохи его истории: от нефтяной до военной.</p>
+                    </div>
+                    
+                    <div class="route-points">
+                        <h3 class="points-title">📍 Точки маршрута:</h3>
+                        <div class="point-item">
+                            <div class="point-number">1</div>
+                            <div class="point-content">
+                                <h4>Памятник Ленину</h4>
+                                <p>Скульптура «Призывающий вождь» на главной площади (1960 год).</p>
+                                <div class="point-coords">пл. Ленина</div>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <div class="point-number">2</div>
+                            <div class="point-content">
+                                <h4>Монумент первооткрывателям нефти</h4>
+                                <p>33-метровый символ нефтяной эпохи (1975 год).</p>
+                                <div class="point-coords">пл. Нефтяников</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">3</div>
+                            <div class="point-content">
+                                <h4>Монумент «Время»</h4>
+                                <p>Часы с маятником на кольцевой развязке. Установлен в 1998 году на месте первых палаток нефтяников.</p>
+                                <div class="point-coords">пересечение ул. Первомайской и Набережной</div>
+                            </div>
+                        </div>
+                        
+                        <div class="point-item">
+                            <div class="point-number">4</div>
+                            <div class="point-content">
+                                <h4>Монумент Вечной Славы</h4>
+                                <p>Вечный огонь и 12 обелисков Героям Советского Союза.</p>
+                                <div class="point-coords">пересечение пр. Ленина и ул. Ленинградской</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта маршрута -->
+                    <div class="route-map-container">
+                        <h3 class="map-title"> Карта маршрута</h3>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=54.601118,52.454622&z=15&l=map&mode=routes&rtext=54.594049,52.447382~54.599218,52.447344~54.604796,52.451923~54.608186,52.464533~54.601582,52.457849&rtt=mt" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0"
+                                allowfullscreen="true"
+                                title="Карта монументального маршрута">
+                        </iframe>
+                        <p class="route-map-note">Главные монументы города</p>
+                    </div>
+                </div>
+            </section>
+
+       
+            <!-- Список всех достопримечательностей -->
+            <section class="attractions-list-section" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Все достопримечательности на карте</h2>
+                <div class="attractions-compact-grid">
+                    <!-- Памятники -->
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="compact-icon">⛲</div>
+                        <div class="compact-content">
+                            <h4>Монумент первооткрывателям нефти</h4>
+                            <span class="compact-category">пл. Нефтяников</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+                        <div class="compact-icon">⏰</div>
+                        <div class="compact-content">
+                            <h4>Монумент «Время»</h4>
+                            <span class="compact-category">кольцо Первомайской/Набережной</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="compact-icon">🔥</div>
+                        <div class="compact-content">
+                            <h4>Монумент Вечной Славы</h4>
+                            <span class="compact-category">пр. Ленина / ул. Ленинградская</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                        <div class="compact-icon">🏛️</div>
+                        <div class="compact-content">
+                            <h4>Памятник Ленину</h4>
+                            <span class="compact-category">пл. Ленина</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="compact-icon">🎭</div>
+                        <div class="compact-content">
+                            <h4>Дворец культуры</h4>
+                            <span class="compact-category">ул. Ленинградская, 28а</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+                        <div class="compact-icon">🕌</div>
+                        <div class="compact-content">
+                            <h4>Мечеть Ихлас</h4>
+                            <span class="compact-category">ул. Набережная, 26А</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="compact-icon">⛪</div>
+                        <div class="compact-content">
+                            <h4>Свято-Троицкий храм</h4>
+                            <span class="compact-category">ул. Губкина, 2А</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                        <div class="compact-icon">💒</div>
+                        <div class="compact-content">
+                            <h4>Дворец бракосочетаний</h4>
+                            <span class="compact-category">ул. Булгакова, 1А</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="compact-icon">🏛️</div>
+                        <div class="compact-content">
+                            <h4>Краеведческий музей</h4>
+                            <span class="compact-category">пр. Шашина, 18</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                        <div class="compact-icon">🛢️</div>
+                        <div class="compact-content">
+                            <h4>Музей нефти</h4>
+                            <span class="compact-category">пр. Ленина, 3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div class="compact-icon">🏭</div>
+                        <div class="compact-content">
+                            <h4>Музей нефти в Шугурово</h4>
+                            <span class="compact-category">с. Шугурово, Заводская, 5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="550">
+                        <div class="compact-icon">🏛️</div>
+                        <div class="compact-content">
+                            <h4>Белая ротонда</h4>
+                            <span class="compact-category">Парк им. Горького</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div class="compact-icon">⛲</div>
+                        <div class="compact-content">
+                            <h4>Фонтан «Балерины»</h4>
+                            <span class="compact-category">пр. Ленина, 29</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
+                        <div class="compact-icon">🖤</div>
+                        <div class="compact-content">
+                            <h4>Чёрная ротонда</h4>
+                            <span class="compact-category">холмистая часть города</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <div class="compact-icon">🌳</div>
+                        <div class="compact-content">
+                            <h4>Парк им. Горького</h4>
+                            <span class="compact-category">центр города</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-compact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="750">
+                        <div class="compact-icon">🏞️</div>
+                        <div class="compact-content">
+                            <h4>Въездная стела</h4>
+                            <span class="compact-category">северный въезд в город</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Советы путешественникам -->
+            <section class="tips-section" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Советы путешественникам</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">👟</div>
+                        <h4>Удобная обувь</h4>
+                        <p>Для пеших маршрутов рекомендуется удобная обувь, особенно если вы планируете подниматься к ротондам.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">📷</div>
+                        <h4>Фотоаппарат</h4>
+                        <p>Лениногорск живописен в любое время года. Берите камеру для красивых снимков.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🗺️</div>
+                        <h4>Офлайн-карты</h4>
+                        <p>Скачайте карты заранее — в поездке за город может не быть интернета.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">📞</div>
+                        <h4>Звоните заранее</h4>
+                        <p>Музеи работают по расписанию, некоторые требуют предварительной записи.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🌅</div>
+                        <h4>Лучшее время</h4>
+                        <p>Ротонды и фонтаны лучше всего смотреть на закате — виды волшебные.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🚗</div>
+                        <h4>Маршрут в Шугурово</h4>
+                        <p>Для поездки в музей нефти лучше всего подходит автомобиль (30-40 минут).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Приглашение -->
+            <div class="invite-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="invite-content">
+                    <h3 class="invite-title">Готовы отправиться в путь?</h3>
+                    <p class="invite-text">Выбирайте маршрут, одевайтесь по погоде и открывайте для себя Лениногорск с новой стороны!</p>
+                    <a href="#" class="invite-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                        <span>К выбору маршрута</span>
+                        <span class="button-arrow">↑</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="#" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-out-cubic'
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Фильтрация маршрутов
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const routeSections = document.querySelectorAll('.route-section');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    routeSections.forEach(section => {
+                        const sectionCategories = section.getAttribute('data-category');
+                        
+                        if (filterValue === 'all' || sectionCategories.includes(filterValue)) {
+                            section.style.display = 'block';
+                            setTimeout(() => {
+                                section.style.opacity = '1';
+                                section.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            section.style.opacity = '0';
+                            section.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                section.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

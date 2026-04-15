@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парки и места для отдыха в Лениногорске</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/parks.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger active">Развлечения</a>
+                <ul class="dropdown">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html" class="active">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+    <section class="parks-hero">
+        <div class="hero-bottom-line"></div>
+        <div class="parks-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <div class="glass-panel glass-panel--dark">
+                <h1>Парки и места для отдыха</h1>
+                <p>Зеленые оазисы Лениногорска для прогулок и релаксации</p>
+            </div>
+        </div>
+    </section>
+    <main class="parks-main">
+        <div class="container">
+            <div class="category-nav" data-aos="fade-up" data-aos-duration="800">
+                <a href="#parks" class="category-nav-btn">🌳 Городские парки</a>
+                <a href="#squares" class="category-nav-btn">🌲 Скверы и аллеи</a>
+                <a href="#water" class="category-nav-btn">💧 Набережные и водоемы</a>
+            </div>
+
+            <div class="parks-intro" data-aos="fade-up" data-aos-duration="1000">
+                <p>Лениногорск — город, утопающий в зелени. Здесь каждый найдет место для отдыха по душе: от тихих аллей для спокойных прогулок до современных парков с аттракционами и спортивными площадками. Приглашаем вас насладиться природой и свежим воздухом!</p>
+            </div>
+
+            <!-- Городские парки -->
+            <section class="category-section" id="parks">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🌳</span> Городские парки
+                </h2>
+                
+                <div class="parks-grid">
+                    <!-- Парк Мэххэбэт -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/mehhebet-park.jpg" alt="Парк Мэххэбэт" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Парк «Мэххэбэт»</h3>
+                            <p class="park-description">Новое современное общественное пространство с уникальным ландшафтным дизайном. Парк любви и встреч — идеальное место для романтических прогулок, фотосессий и спокойного отдыха. Здесь установлены оригинальные арт-объекты, уютные беседки и создана особая атмосфера уюта.</p>
+                            <div class="park-features">
+                                <span class="feature">❤️ Арт-объекты</span>
+                                <span class="feature">✨ Вечерняя подсветка</span>
+                                <span class="feature">🌿 Ландшафтный дизайн</span>
+                            </div>
+                            <div class="park-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Парк культуры и отдыха им. Горького -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/pg.jpg" alt="Парк им. Горького" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Парк культуры и отдыха им. Горького</h3>
+                            <p class="park-description">Центральный парк города, любимое место отдыха горожан. Здесь есть аттракционы, летние кафе, тенистые аллеи и множество скамеек для отдыха. Особую атмосферу создают вековые деревья и ухоженные клумбы.</p>
+                            <div class="park-features">
+                                <span class="feature">🎡 Аттракционы</span>
+                                <span class="feature">☕ Летние кафе</span>
+                                <span class="feature">🌿 Тенистые аллеи</span>
+                                <span class="feature">🎭 Летняя эстрада</span>
+                            </div>
+                            <div class="park-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Парк Победы -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/pobedy-park.jpg" alt="Парк Победы" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Парк Победы</h3>
+                            <p class="park-description">Мемориальный парк с монументом Вечной Славы и аллеей героев. Прекрасное место для тихих прогулок и патриотического воспитания. Ухоженные дорожки, скамейки и цветники создают атмосферу торжественного спокойствия.</p>
+                            <div class="park-features">
+                                <span class="feature">🔥 Вечный огонь</span>
+                                <span class="feature">🏛️ Мемориал</span>
+                                <span class="feature">🌲 Хвойные аллеи</span>
+                                <span class="feature">📜 Стелы героев</span>
+                            </div>
+                            <div class="park-footer">
+                                <span class="park-location">
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Парк Юбилейный -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/yubileyny-park.jpg" alt="Парк Юбилейный" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Парк «Юбилейный»</h3>
+                            <p class="park-description">Современное общественное пространство с зонами для активного и спокойного отдыха. Здесь есть велодорожки, спортивные площадки, детский городок и уютные беседки. Особенно красиво парк выглядит в вечерней подсветке.</p>
+                            <div class="park-features">
+                                <span class="feature">⚽ Спортплощадки</span>
+                                <span class="feature">🧒 Детский городок</span>
+                                <span class="feature">✨ Вечерняя подсветка</span>
+                                <span class="feature">🎄 Главная елка</span>
+                            </div>
+                            <div class="park-footer">
+                                
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Скверы и аллеи -->
+            <section class="category-section" id="squares">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">🌲</span> Скверы и аллеи
+                </h2>
+                
+                <div class="parks-grid">
+                    <!-- Аллея Славы -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/glory-allee.jpg" alt="Аллея Славы" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Аллея Cлавы</h3>
+                            <p class="park-description">Мемориальный парк с монументом Вечной Славы и аллеей героев. Прекрасное место для тихих прогулок и патриотического воспитания. Ухоженные дорожки, скамейки и цветники создают атмосферу торжественного спокойствия.</p>
+                            <div class="park-features">
+                                <span class="feature">🔥 Вечный огонь</span>
+                                <span class="feature">🏛️ Мемориал</span>
+                                <span class="feature">🌲 Хвойные аллеи</span>
+                                <span class="feature">📜 Стелы героев</span>
+                            </div>
+                            <div class="park-footer">
+                                <span class="park-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    пр. 50 лет Победы
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Центральная аллея -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/centr.jpg" alt="Центральная аллея" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Центральная аллея</h3>
+                            <p class="park-description">Ухоженная зона отдыха перед главным культурным учреждением города. С фонтаном, цветниками и удобными скамейками. Вечером включается декоративная подсветка, создающая романтичную атмосферу.</p>
+                            <div class="park-features">
+                                <span class="feature">⛲ Фонтан</span>
+                                <span class="feature">🌺 Цветники</span>
+                                <span class="feature">📸 Фотозоны</span>
+                            </div>
+                            <div class="park-footer">
+                                <span class="park-location">
+                                    <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#c7a97b"/>
+                                    </svg>
+                                    пр. Ленина, 50
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Площадь Ленина -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/lenin-square.jpg" alt="Площадь Ленина" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Площадь Ленина</h3>
+                            <p class="park-description">Главная площадь и архитектурное сердце города. Доминантой площади является здание городской администрации, а в центре возвышается памятник В.И. Ленину (1960 г.). Именно здесь проходят парады на День Победы, праздничные гуляния на День города и Новый год с главной городской елкой.</p>
+                            <div class="park-features">
+                                <span class="feature">🏛️ Здание администрации</span>
+                                <span class="feature">🗽 Памятник Ленину</span>
+                                <span class="feature">🌸 Цветники</span>
+                            </div>
+                            <div class="park-footer">
+                               
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Набережные и водоемы -->
+            <section class="category-section" id="water">
+                <h2 class="category-title" data-aos="fade-up">
+                    <span class="title-icon">💧</span> Набережные и водоемы
+                </h2>
+                
+                <div class="parks-grid">
+                    <!-- Нижнее озеро -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/nab.jpg" alt="Нижнее озеро" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Нижнее озеро</h3>
+                            <p class="park-description">Визитная карточка Лениногорска, преображенная в 2016 году при участии жителей. Игровая зона с мозаичными скульптурами (осьминог, крокодил, кит) и сухой светодинамический фонтан. Городской пляж с лежаками и навесами (купальный сезон с июня). Маяк с подсветкой, лодочная станция, воркаут и амфитеатр.</p>
+                            <div class="park-features">
+                                <span class="feature">🏞️ Вид на водоем</span>
+                                <span class="feature">🏖️ Городской пляж</span>
+                                <span class="feature">🗼 Маяк с подсветкой</span>
+                                <span class="feature">🚶 Прогулочная зона</span>
+                            </div>
+                            <div class="park-footer">
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Городской пруд -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/pond.jpg" alt="Городской пруд" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Городской пруд</h3>
+                            <p class="park-description">Небольшой, но очень уютный пруд в центре города. Здесь можно покормить уток, посидеть на скамейке или просто полюбоваться на водную гладь.</p>
+                            <div class="park-features">
+                                <span class="feature">🦆 Утки</span>
+                                <span class="feature">🪑 Скамейки</span>
+                            </div>
+                            <div class="park-footer">
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Верхнее озеро -->
+                    <div class="park-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="park-img-wrapper">
+                            <img src="img/parks/lake.jpg" alt="Верхнее озеро" class="park-img" loading="lazy">
+                        </div>
+                        <div class="park-content">
+                            <h3>Верхнее озеро</h3>
+                            <p class="park-description">Тихая, камерная зона вдали от городского шума. Идеально для прогулок с коляской или чтения книги в тени деревьев.</p>
+                            <div class="park-features">
+                                <span class="feature">🌳 Тихая зона отдыха</span>
+                                <span class="feature">👶 Прогулки с коляской</span>
+                                <span class="feature">📚 Чтение у воды</span>
+                            </div>
+                            <div class="park-footer">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="parks-quote" data-aos="fade-up" data-aos-duration="1000">
+                <p>«Лениногорск — город, где природа и городская среда гармонично дополняют друг друга. Парки и скверы — это легкие города и любимые места отдыха горожан»</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+                <li><a href="nature.html">Отдых на природе</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

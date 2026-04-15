@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Лениногорска</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Visit <span>Leninogorsk</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="city.html">О городе</a></li>
+            <li><a href="news.html" class="active">Новости</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Развлечения</a>
+                <ul class="dropdown" aria-label="подменю">
+                    <li><a href="attractions.html">Достопримечательности</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="parks.html">Парки и места для прогулок</a></li>
+                </ul>
+            </li>
+            <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+    </header>
+    <section class="news-hero">
+        <div class="hero-bottom-line"></div>
+        <div class="news-hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <div class="glass-panel glass-panel--dark">
+                <h1>Новости Лениногорска</h1>
+                <p>Будьте в курсе последних событий города и района</p>
+            </div>
+        </div>
+    </section>
+    <main class="news-main">
+        <div class="container">
+            <div class="filter-search-bar" data-aos="fade-up" data-aos-duration="800">
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">📰 Все</button>
+                    <button class="filter-btn" data-category="city">🏙️ Город</button>
+                    <button class="filter-btn" data-category="culture">🎭 Культура</button>
+                    <button class="filter-btn" data-category="important">⚠️ Важно</button>
+                    <button class="filter-btn" data-category="events">🎉 События</button>
+                </div>
+                
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" class="search-input" placeholder="Поиск новостей...">
+                </div>
+            </div>
+
+            <div class="news-grid" id="news-grid">
+                
+                <!-- ГЛАВНАЯ НОВОСТЬ -->
+                <div class="news-card featured" data-category="city" data-aos="fade-up" data-aos-duration="1000">
+    <div class="news-img-wrapper">
+        <span class="news-tag">🏙️ Город</span>
+        <img src="img/08589958f99e89c03df03fdeeb0a2c5d.jpg" alt="Экстренное предупреждение" class="news-img" loading="lazy">
+    </div>
+    <div class="news-content">
+        <span class="news-date">28 марта 2026 г.</span>
+        <h3>Консультация – предупреждение об интенсивности метеорологических явлений</h3>
+        <p class="news-excerpt">От ФГБУ «Управление по гидрометеорологии и мониторингу окружающей среды Республики Татарстан» поступила консультация-предупреждение об интенсивности... </p>
+        <div class="news-meta">
+            <span class="news-views">2.5K</span>
+            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2506564.htm" class="read-more-btn">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+                <!-- Карточка 1 -->
+                <div class="news-card" data-category="events" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎉 События</span>
+                        <img src="img/1061_n2506213_big.jpg" alt="Мероприятие в ЗАГСе" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">27 марта 2026</span>
+                        <h3>Семье Ситдиковых из Лениногорска вручили медаль ордена «Родительская слава»</h3>
+                        <p class="news-excerpt">Премьер-министр Республики Татарстан Алексей Песошин вручил государственные награды в Казанском Кремле.</p>
+                        <div class="news-meta">
+                            <span class="news-views">2.1K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2506213.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 (Важно) -->
+                <div class="news-card" data-category="important" data-aos="fade-up" data-aos-duration="800">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">⚠️ Важно</span>
+                        <img src="img/1061_n2504574_big.jpg" alt="Безопасные каникулы" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">26 марта 2026</span>
+                        <h3>Внимание, родители и водители!</h3>
+                        <p class="news-excerpt">Внимание, родители и водители! Безопасные каникулы в Лениногорском районе.</p>
+                        <div class="news-meta">
+                            <span class="news-views">876</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2504574.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="news-card" data-category="city" data-aos="fade-up" data-aos-duration="800">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🏙️ Город</span>
+                        <img src="img/1061_n2505983_big.jpg" alt="Меры профилактики преступлений" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">26 марта 2026</span>
+                        <h3>В Лениногорске обсудили меры профилактики преступлений среди несовершеннолетних</h3>
+                        <p class="news-excerpt">В школе №2 Лениногорска по инициативе депутата Государственного Совета Республики Татарстан Ирека Ханипова состоялось общегородское совещание на тему: «Профилактика совершения преступлений в отношении несовершеннолетних, в том числе с использованием информационно-телекоммуникационных технологий. Меры, предпринимаемые для реабилитации жертв преступлений».</p>
+                        <div class="news-meta">
+                            <span class="news-views">1.5K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2505983.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="news-card" data-category="events" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎉 События</span>
+                        <img src="img/1061_n2505779_big.jpg" alt="День открытки" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">25 марта 2026</span>
+                        <h3>Сегодня ― День открытки</h3>
+                        <p class="news-excerpt">25 марта в России отмечается День рождения почтовой открытки — именно в этот день в 1872 г. первая открытка вышла в обращение. Несмотря на то, что пик популярности, который приходился на конец XIX – середину XX веков, прошёл, почтовые открытки востребованы и сегодня.</p>
+                        <div class="news-meta">
+                            <span class="news-views">2.1K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2505779.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="news-card" data-category="events" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎉 События</span>
+                        <img src="img/1061_n2504927_big.jpg" alt="Конкурс для молодёжи" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">24 марта 2026</span>
+                        <h3>Объявлен конкурс на должность молодёжного помощника руководителя аппарата Антитеррористической комиссии Республики Татарстан</h3>
+                        <p class="news-excerpt">Региональной общественной организацией «Академия творческой молодежи Республики Татарстан» при координации аппарата антитеррористической комиссии в Республике Татарстан реализуется конкурс на должность молодёжного помощника руководителя аппарата АТК в РТ для молодых людей в возрасте от 18 до 35 лет, готовых развиваться в сфере противодействия деструктивным идеологиям и создавать общественно значимые проекты в данной сфере.</p>
+                        <div class="news-meta">
+                            <span class="news-views">543</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2504927.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="news-card" data-category="events" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎉 События</span>
+                        <img src="img/1061_n2504955_big.jpg" alt="Международный фестиваль молодежи" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">24 марта 2026</span>
+                        <h3>Объявлен старт заявочной кампании в делегацию Татарстана на Международный фестиваль молодежи 2026 года</h3>
+                        <p class="news-excerpt">С 11 по 17 сентября 2026 года в Екатеринбурге пройдет крупнейшее международное молодежное событие года – Международный фестиваль молодежи, который соберет 10 тысяч молодых лидеров, экспертов и активистов из 190 стран мира.</p>
+                        <div class="news-meta">
+                            <span class="news-views">789</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2504955.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 7 -->
+                <div class="news-card" data-category="events" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎉 События</span>
+                        <img src="img/1061_n2496338_big.jpg" alt="Благоустройство дворов" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">23 марта 2026</span>
+                        <h3>В этом году в Лениногорске будут благоустроены 19 дворовых территорий</h3>
+                        <p class="news-excerpt">В этом году в Лениногорске будут благоустроены 19 дворовых территорий по республиканской программе Раиса Татарстана Рустама Минниханова «Наш двор».</p>
+                        <div class="news-meta">
+                            <span class="news-views">1.8K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2504698.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 8 (Важно) -->
+                <div class="news-card" data-category="important" data-aos="fade-up" data-aos-duration="800">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">⚠️ Важно</span>
+                        <img src="img/X2NMdE8jIBcCCd4KKqHAfyNy3iInqLBlHrhNLhsfJ2arjm30jb_YgXvocdessGD9j29FdR-BTNazKdJeq0AjsFuz(8).jpg" alt="Правила безопасности" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">20 марта 2026</span>
+                        <h3>Правила безопасности при атаке БПЛА</h3>
+                        <p class="news-excerpt">Что делать при атаке БПЛА? Оставайтесь спокойными и не поддавайтесь панике. Немедленно укройтесь в ближайшем защищённом помещении (подвал, убежище). Если укрытие недоступно, лягте на землю, прикройте голову руками. Не приближайтесь к окнам и не выходите на улицу до окончания угрозы. Следуйте инструкциям местных властей и экстренных служб.</p>
+                        <div class="news-meta">
+                            <span class="news-views">1.2K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2505140.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 9 -->
+                <div class="news-card" data-category="culture" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="news-img-wrapper">
+                        <span class="news-tag">🎭 Культура</span>
+                        <img src="img/1061_n2505652_big.jpg" alt="Ураза байрам" class="news-img" loading="lazy">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">20 марта 2026</span>
+                        <h3>В Лениногорске отметили Ураза байрам</h3>
+                        <p class="news-excerpt">В парке «Юбилейный» города Лениногорск состоялось праздничное мероприятие в честь окончания поста Ураза-байрам. Мероприятие прошло в рамках национального проекта «Семья» федерального проекта «Семейные ценности и инфраструктура культуры».</p>
+                        <div class="news-meta">
+                            <span class="news-views">1.4K</span>
+                            <a href="https://leninogorsk.tatarstan.ru/index.htm/news/2505652.htm" class="read-more-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination" data-aos="fade-up" data-aos-duration="800">
+                <a href="#" class="pagination-btn prev">←</a>
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn">4</a>
+                <a href="#" class="pagination-btn">5</a>
+                <a href="#" class="pagination-btn next">→</a>
+            </div>
+
+            <!-- Подписка на новости -->
+            <div class="subscribe-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="subscribe-content">
+                    <h3>Будьте в курсе событий</h3>
+                    <p>Подпишитесь на нашу рассылку и получайте самые свежие новости первыми</p>
+                    <form class="subscribe-form" id="subscribe-form">
+                        <input type="email" id="subscribe-email" placeholder="Ваш email" required>
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-col">
+            <h4>Что посмотреть</h4>
+            <ul>
+                <li><a href="attractions.html">Достопримечательности</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="parks.html">Парки и места для прогулок</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Спланировать поездку</h4>
+            <ul>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="accommodation.html">Где остановиться</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>О городе</h4>
+            <ul>
+                <li><a href="history.html">История</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li><a href="cuisine.html">Кухня</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Свяжитесь с нами</h4>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-email">portal@visit-leninogorsk.com</a>
+            <a href="mailto:portal@visit-leninogorsk.com" class="footer-btn">Написать нам</a>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Мы во ВКонтакте">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vk.svg" alt="VK" loading="lazy">
+                </a>
+                <a href="#" aria-label="Наш Telegram-канал">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Официальный туристический портал Лениногорского района. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Toast-уведомление -->
+    <div class="toast-notification" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toast-message"></span>
+        </div>
+    </div>
+
+    <!-- AOS и скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.filter-btn');
+            const newsCards = document.querySelectorAll('.news-card');
+            const searchInput = document.getElementById('search-input');
+            let currentCategory = 'all';
+            let searchQuery = '';
+
+            function filterNews() {
+                newsCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                    const cardText = card.querySelector('.news-excerpt').textContent.toLowerCase();
+                    const categoryMatch = currentCategory === 'all' || cardCategory === currentCategory;
+                    const searchMatch = searchQuery === '' || 
+                        cardTitle.includes(searchQuery.toLowerCase()) || 
+                        cardText.includes(searchQuery.toLowerCase());
+                    if (categoryMatch && searchMatch) {
+                        card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentCategory = this.getAttribute('data-category');
+                    filterNews();
+                });
+            });
+            searchInput.addEventListener('input', function() {
+                searchQuery = this.value;
+                filterNews();
+            });
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchQuery = this.value;
+                    filterNews();
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const subscribeForm = document.getElementById('subscribe-form');
+            const emailInput = document.getElementById('subscribe-email');
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            function showToast(message, isSuccess = true) {
+                toastMessage.textContent = message;
+                toast.classList.add('show');
+                const toastIcon = toast.querySelector('.toast-icon');
+                if (isSuccess) {
+                    toastIcon.style.background = 'var(--accent-green)';
+                    toastIcon.style.color = 'white';
+                } else {
+                    toastIcon.style.background = '#dc3545';
+                    toastIcon.style.color = 'white';
+                    toastIcon.textContent = '!';
+                }
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }
+            subscribeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = emailInput.value.trim();
+                if (!email) {
+                    showToast('Пожалуйста, введите email', false);
+                    return;
+                }
+                if (!email.includes('@') || !email.includes('.')) {
+                    showToast('Пожалуйста, введите корректный email', false);
+                    return;
+                }
+                showToast('Спасибо! Вы успешно подписались на рассылку');
+                emailInput.value = '';
+                setTimeout(() => {
+                    const toastIcon = toast.querySelector('.toast-icon');
+                    toastIcon.textContent = '✓';
+                    toastIcon.style.background = 'var(--accent-green)';
+                }, 3000);
+            });
+            toast.addEventListener('click', function() {
+                toast.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
