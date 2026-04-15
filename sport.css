@@ -1,0 +1,877 @@
+.sport-hero {
+    height: 50vh;
+    min-height: 350px;
+    background: linear-gradient(135deg, var(--accent-green) 0%, #0f2b20 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+/* Спортивные иконки на фоне */
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(199, 169, 123, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 80% 60%, rgba(199, 169, 123, 0.15) 0%, transparent 30%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><circle cx="20" cy="30" r="8" fill="none" stroke="%23c7a97b" stroke-width="1.5"/><circle cx="80" cy="70" r="8" fill="none" stroke="%23c7a97b" stroke-width="1.5"/><path d="M30,50 L45,30 L60,50 L45,70 L30,50" fill="none" stroke="%23c7a97b" stroke-width="1.5"/><path d="M70,25 L85,25 L85,40 L70,40" fill="none" stroke="%23c7a97b" stroke-width="1.5"/></svg>');
+    background-size: 150px 150px;
+    background-repeat: repeat;
+    animation: slowFloat 40s linear infinite;
+    z-index: 1;
+}
+
+@keyframes slowFloat {
+    0% { transform: translateY(0) rotate(0deg); }
+    33% { transform: translateY(-20px) rotate(1deg); }
+    66% { transform: translateY(10px) rotate(-1deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* Золотая линия внизу */
+.hero-bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), var(--soft-gold), var(--accent-gold), transparent);
+    z-index: 3;
+}
+
+.sport-hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стеклянная панель */
+.glass-panel--dark {
+    background: rgba(15, 43, 32, 0.5);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 2px solid var(--accent-gold);
+    color: var(--text-light);
+    padding: 50px 60px;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-panel--dark::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(199, 169, 123, 0.2) 0%, transparent 70%);
+    animation: rotateGlow 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotateGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.glass-panel--dark h1 {
+    font-size: clamp(48px, 7vw, 80px);
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.glass-panel--dark h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.glass-panel--dark p {
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: var(--soft-gold);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* КОНТЕЙНЕР  */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/*  БЫСТРАЯ НАВИГАЦИЯ  */
+.category-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.category-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background: var(--bg-white);
+    border: 2px solid var(--soft-gold);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.category-nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-gold);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+    transform-origin: left;
+}
+
+.category-nav-btn:hover {
+    color: var(--accent-green);
+    border-color: var(--accent-gold);
+    transform: translateY(-3px);
+}
+
+.category-nav-btn:hover::before {
+    transform: scaleX(1);
+}
+
+/* ВСТУПЛЕНИЕ */
+.sport-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    padding: 0 20px;
+    position: relative;
+}
+
+.sport-intro::before,
+.sport-intro::after {
+    content: '⚽';
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.1;
+    color: var(--accent-gold);
+}
+
+.sport-intro::before {
+    top: -20px;
+    left: 0;
+}
+
+.sport-intro::after {
+    bottom: -20px;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+/* ЗАГОЛОВКИ КАТЕГОРИЙ  */
+.category-section {
+    margin-bottom: 80px;
+}
+
+.category-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-gold), transparent);
+    margin-left: 20px;
+}
+
+.title-icon {
+    font-size: 36px;
+    background: rgba(199, 169, 123, 0.1);
+    padding: 10px;
+}
+
+/*  СЕТКА СПОРТИВНЫХ ОБЪЕКТОВ */
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/*  КАРТОЧКА СПОРТИВНОГО ОБЪЕКТА */
+.sport-card {
+    background: var(--bg-white);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+    transition: all 0.4s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sport-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(199, 169, 123, 0.25), 0 0 0 2px var(--accent-gold);
+}
+
+/* Обертка для изображения */
+.sport-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.sport-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s ease;
+}
+
+.sport-card:hover .sport-img {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+/* Контент карточки */
+.sport-content {
+    padding: 25px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: white;
+    transition: background 0.3s ease;
+}
+
+.sport-card:hover .sport-content {
+    background: linear-gradient(135deg, white, #fff9f0);
+}
+
+.sport-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: 12px;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease;
+}
+
+.sport-card:hover h3 {
+    color: var(--accent-gold);
+}
+
+.sport-description {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Особенности */
+.sport-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    background: rgba(199, 169, 123, 0.1);
+    color: var(--text-muted);
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-left: 2px solid var(--accent-gold);
+}
+
+/* Футер карточки */
+.sport-footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(199, 169, 123, 0.2);
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.sport-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.location-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.sport-card:hover .location-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.location-icon path {
+    fill: var(--accent-gold);
+}
+
+/*  СОБЫТИЯ */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.event-card {
+    display: flex;
+    background: var(--bg-white);
+    border: 1px solid var(--soft-gold);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-gold);
+}
+
+.event-date {
+    background: var(--accent-green);
+    color: white;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 5px;
+    border-right: 2px solid var(--accent-gold);
+}
+
+.event-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.event-content h4 {
+    color: var(--accent-green);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.event-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.event-card:hover h4 {
+    color: var(--accent-gold);
+}
+
+/*  КОМАНДЫ  */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.team-card {
+    display: flex;
+    gap: 20px;
+    background: var(--bg-white);
+    padding: 25px;
+    border: 1px solid var(--soft-gold);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-gold);
+}
+
+.team-icon {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--accent-gold);
+}
+
+.team-content h4 {
+    color: var(--accent-green);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.team-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.team-card:hover h4 {
+    color: var(--accent-gold);
+}
+
+/*СПОРТИВНЫЕ ШКОЛЫ */
+.schools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.school-card {
+    background: var(--bg-white);
+    padding: 25px;
+    border: 1px solid var(--soft-gold);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.school-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-gold);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.school-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-gold);
+}
+
+.school-card:hover::before {
+    transform: scaleY(1);
+}
+
+.school-icon {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 5px;
+}
+
+.school-card h4 {
+    color: var(--accent-green);
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+}
+
+.school-card:hover h4 {
+    color: var(--accent-gold);
+}
+
+.school-specialization {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(199, 169, 123, 0.3);
+}
+
+/* Адрес */
+.school-address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    padding: 5px 0;
+}
+
+.address-icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--accent-gold);
+}
+
+/* Телефон */
+.school-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(199, 169, 123, 0.05);
+    padding: 10px 12px;
+    border-radius: 0;
+    margin-top: 5px;
+    border-left: 3px solid var(--accent-gold);
+}
+
+.phone-icon {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+}
+
+.phone-number {
+    color: var(--accent-green);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    flex-grow: 1;
+}
+
+.copy-phone {
+    background: transparent;
+    border: 1px solid var(--soft-gold);
+    color: var(--accent-green);
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.copy-phone:hover {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: white;
+    transform: scale(1.05);
+}
+
+.copy-phone.copied {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: white;
+    position: relative;
+}
+
+.copy-phone.copied::after {
+    content: 'Скопировано!';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-green);
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* ===== ЦИТАТА ===== */
+.sport-quote {
+    background: linear-gradient(135deg, var(--bg-white), #f8f4ec);
+    padding: 50px;
+    margin: 60px 0 40px;
+    text-align: center;
+    border: 5px solid var(--soft-gold);
+    position: relative;
+    background-image: radial-gradient(var(--soft-gold) 0.8px, transparent 0.8px);
+    background-size: 20px 20px;
+}
+
+.sport-quote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
+    color: var(--accent-gold);
+    opacity: 0.2;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+.sport-quote p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--accent-green);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 2;
+}
+
+.quote-author {
+    color: var(--accent-gold);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ===== TOAST УВЕДОМЛЕНИЕ ===== */
+.copy-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--accent-green);
+    color: white;
+    padding: 12px 25px;
+    font-size: 0.95rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-left: 4px solid var(--accent-gold);
+    opacity: 0;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copy-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 1024px) {
+    .sports-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sport-hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .glass-panel--dark {
+        padding: 30px 25px;
+    }
+    
+    .glass-panel--dark h1 {
+        font-size: 36px;
+    }
+    
+    .glass-panel--dark p {
+        font-size: 16px;
+    }
+    
+    .category-nav {
+        gap: 10px;
+    }
+    
+    .category-nav-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .category-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .title-icon {
+        font-size: 28px;
+        padding: 8px;
+    }
+    
+    .sport-intro {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sport-img-wrapper {
+        height: 200px;
+    }
+    
+    .sport-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .sport-features {
+        gap: 5px;
+    }
+    
+    .feature {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+    
+    .sport-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .event-card {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--accent-gold);
+        padding: 10px;
+    }
+    
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .schools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sport-quote {
+        padding: 30px 20px;
+    }
+    
+    .sport-quote p {
+        font-size: 1.2rem;
+    }
+    
+    .copy-toast {
+        bottom: 20px;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .sport-hero {
+        height: 35vh;
+        min-height: 250px;
+    }
+    
+    .glass-panel--dark {
+        padding: 20px 15px;
+    }
+    
+    .glass-panel--dark h1 {
+        font-size: 28px;
+    }
+    
+    .glass-panel--dark p {
+        font-size: 14px;
+    }
+    
+    .category-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .category-nav-btn {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .category-title {
+        font-size: 24px;
+        flex-wrap: wrap;
+    }
+    
+    .category-title::after {
+        display: none;
+    }
+    
+    .title-icon {
+        font-size: 24px;
+        padding: 6px;
+    }
+    
+    .sport-img-wrapper {
+        height: 180px;
+    }
+    
+    .sport-content {
+        padding: 20px 15px;
+    }
+    
+    .sport-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .sport-description {
+        font-size: 0.9rem;
+    }
+    
+    .events-grid,
+    .teams-grid,
+    .schools-grid {
+        grid-template-columns: 1fr;
+    }
+}
