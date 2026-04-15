@@ -1,9 +1,8 @@
-
 .accommodation-hero {
     height: 85vh;
     min-height: 600px;
     background: linear-gradient(135deg, rgba(27, 67, 50, 0.85), rgba(15, 43, 32, 0.9)), 
-                url('../img/accommodation-hero-bg.jpg') no-repeat center/cover;
+                url('accommodation-hero-bg.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     display: flex;
